@@ -7,14 +7,13 @@ public abstract class Character implements Creature{
         this.hp = hp;
     }
 
-    public boolean isAlive() {
+    public final boolean isAlive() {
         if (hp <= 0) {
             return false;
         } else {
             return true;
         }
     }
-
 
     public void showStatus(){
         System.out.println(this.getName() + ":HP" + this.getHp());

@@ -5,6 +5,6 @@ public class Goblin extends Monster{
 
     public void attack(Creature target) {
         System.out.println(getName() + getSuffix() + "はナイフで切りつけた!" + target.getName() + "に8のダメージを与えた!");
-        target.setHp(this.getHp()-8);
+        target.setHp(target.getHp()-8);
     }
 }

@@ -9,7 +9,7 @@ public abstract class Monster implements Creature{
         this.suffix = suffix;
     }
 
-    public boolean isAlive() {
+    public final boolean isAlive() {
         if (hp <= 0) {
             return false;
         } else {
